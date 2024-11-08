@@ -1,5 +1,6 @@
 from config import *
 from rotate import *
+from draw import *
 
 running = True
 while running:
@@ -12,12 +13,15 @@ while running:
 
         if event.type == pygame.USEREVENT:
             if event.user_type == pygame_gui.UI_BUTTON_PRESSED:
-                if event.ui_element == button:
+                if event.ui_element == spin_button:
                     spin_independently = not spin_independently
                     if spin_independently:
-                        button.set_text("Follow Mouse")
+                        spin_button.set_text("Follow Mouse")
                     else:
-                        button.set_text("Spin Independently")
+                        spin_button.set_text("Spin Independently")
+
+                elif event.ui_element == color_button:
+                    change_color(color_index)
 
     
     if spin_independently:
