@@ -1,0 +1,1 @@
+Implementation of the classic "spinning cube" render using PyGame, with a twist. It tracks your mouse movement instead of rotating freely
