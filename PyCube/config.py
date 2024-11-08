@@ -1,4 +1,6 @@
 import pygame
+import pygame_gui
+
 # Window dimensions
 WIDTH, HEIGHT = 640, 480
 
@@ -37,3 +39,16 @@ pygame.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
 pygame.display.set_caption("PyCube")
+
+gui_manager = pygame_gui.UIManager((WIDTH, HEIGHT), 'theme.json')
+
+button_rect = pygame.Rect((10, 10), (200, 50))
+button = pygame_gui.elements.UIButton(
+    relative_rect=button_rect,
+    manager=gui_manager,
+    object_id = '#spin_button',
+    text='Spin Independently',
+    visible=True
+)
+
+spin_independently = False

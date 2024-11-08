@@ -1,0 +1,10 @@
+{
+    "colours": {
+        "normal_bg": "#AAAAAA",
+        "hovered_bg": "#CCCCCC",
+        "active_bg": "#DDDDDD",
+        "normal_text": "#000000",
+        "hovered_text": "#000000",
+        "active_text": "#000000"
+    }
+}
