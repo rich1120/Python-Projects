@@ -1,6 +1,8 @@
 import pygame
 import random
 import pygame_gui
+import numpy as np
+import math
 
 # Window dimensions
 WIDTH, HEIGHT = 640, 480

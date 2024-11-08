@@ -7,13 +7,13 @@ def change_color(color_index):
     color = color_index[random.randint(0, len(color_index) - 1)]
 
 
-# Function to draw the cube
+# Function to render the cube according to its current rotational value
 def rotate(angle_x, angle_y):
-    # Rotate cube
     rotation_matrix_x = rotate_x(angle_x)
     rotation_matrix_y = rotate_y(angle_y)
     rotation_matrix = np.dot(rotation_matrix_y, rotation_matrix_x)
     projected_vertices = []
+    
     for vertex in vertices:
         x, y, z = vertex
         vertex_array = np.array([x, y, z])
