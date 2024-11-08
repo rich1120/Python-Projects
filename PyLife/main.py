@@ -30,7 +30,11 @@ def main():
 
             if event.type == pygame.MOUSEBUTTONDOWN:
                 x, y = event.pos
-                positions.add((x // TILE_SIZE, y // TILE_SIZE))
+                pos = (x // TILE_SIZE, y // TILE_SIZE)
+                if pos in positions:
+                    positions.remove(pos)
+                else:
+                    positions.add(pos)
 
         screen.fill(GRAY)
         draw_grid(positions)
