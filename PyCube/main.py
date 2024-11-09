@@ -47,7 +47,7 @@ while running:
         angle_x = -mouse_x / WIDTH * math.pi
         angle_y = -mouse_y / HEIGHT * math.pi
 
-    screen.fill((0,0,0))
+    screen.fill((32, 32, 32))
     rotate(angle_x, angle_y)
 
     # Update screen
