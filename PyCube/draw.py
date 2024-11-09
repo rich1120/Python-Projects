@@ -25,3 +25,4 @@ def rotate(angle_x, angle_y):
     
     for edge in edges:
         pygame.draw.line(screen, color, projected_vertices[edge[0]], projected_vertices[edge[1]])
+        

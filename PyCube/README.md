@@ -1,1 +1,1 @@
-Implementation of the classic "spinning cube" render using PyGame, with a twist. It can track your mouse movement instead of rotating freely, as well as change colors. 
+Implementation of the classic "spinning cube" render using PyGame, with a twist. It can track your mouse movement instead of rotating freely, as well as change colors and speed of rotation. 
