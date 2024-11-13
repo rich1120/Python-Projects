@@ -1,0 +1,1 @@
+PyFluid will be a fluid simulation in pygame. I will start with a simple sand grain simulation, and hope to build into a multi-fluid simulator, where the user can choose water, various oils, or "slime", simulating viscosity as well as splashing and surface tension. I plan to implement a Navier-Stokes model to do this
